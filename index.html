@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Photo album</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head"><h1>Hi There <br>
+   😙 have a nice day 😊</h1></header>
+   <div class="bigbox">
+    <div class="gallary">
+        <div class="box">
+            <img src="/img/img (1).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (2).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (3).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (4).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (5).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (6).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (7).jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="/img/img (8).jpg" alt="">
+        </div>
+    </div>
+    </div>
+    <script>
+        let gallary = document.querySelector(".gallary")
+        gallary.addEventListener("wheel", (v) => {
+            v.preventDefault();
+            gallary.scrollLeft += v.deltaY;
+        })
+
+    </script>
+</body>
+
+</html>

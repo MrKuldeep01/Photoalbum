@@ -1,0 +1,84 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(50deg,rgba(255, 2, 107, 0.767),rgba(255, 0, 0, 0.444),rgba(255, 255, 0, 0.685));
+}
+.bigbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width:100%;
+
+}
+.gallary{
+    height: 65%;
+    width: 90%;
+    overflow: hidden;
+    overflow-x:scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    border:none;
+    border-radius:5px;
+    padding:15px;
+    border-bottom:5px solid rgba(109, 109, 109, 0.534);
+    
+}
+.gallary::-webkit-scrollbar{
+    height:4px;
+    /* display:none; */
+}
+.gallary::-webkit-scrollbar-track{
+background: rgba(109, 109, 109, 0.534);
+}
+
+.gallary::-webkit-scrollbar-thumb{
+    background: rgba(211, 211, 211, 0.815);
+}
+
+.box{
+    height: 100%;
+    width: 215px;
+    border:2px solid white;
+    overflow: hidden;
+    border-radius: 4px;
+    margin:1px 5px;
+    flex-shrink: 0;
+    transition:all 1.5s ease ;
+}
+.box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+
+}
+.gallary:hover .box{
+    filter:grayscale(.8);
+    /* filter: blur(1px); */
+    backdrop-filter: blur(1px);
+}
+.gallary:hover .box:hover{
+    margin:0px 5px;
+    filter:grayscale(0)
+}
+.box:hover{
+
+    transform:scale(1.1)
+}
+
+.head h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+
+    font-family: math;
+    margin-top: 20px; 
+}
